@@ -1,5 +1,5 @@
 # Using official python runtime base image
-FROM python:alpine3.16
+FROM python
 
 # Set the application directory
 WORKDIR /app
@@ -15,4 +15,4 @@ ADD . /app
 EXPOSE 80
 
 # Define our command to be run when launching the container
-CMD ["python","app"]
+CMD ["python","app.py"]
